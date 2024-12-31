@@ -1,0 +1,30 @@
+# Insertion Sort ve Selection Sort Analizi
+
+## Proje 1: [22,27,16,2,18,6] Insertion Sort Aşamaları
+
+1. [**22**,27,16,2,18,6]
+2. [**22,27**,16,2,18,6]
+3. [**16,22,27**,2,18,6]
+4. [**2,16,22,27**,18,6]
+5. [**2,16,18,22,27**,6]
+6. [**2,6,16,18,22,27**]
+
+## Big-O Gösterimi
+- Worst Case: O(n²)
+- Average Case: O(n²)
+- Best Case: O(n)
+
+## Time Complexity
+18 sayısı dizinin ortalarında bulunduğu için **Average Case** kapsamına girer.
+
+## [7,3,5,8,2,9,4,15,6] Selection Sort'un İlk 4 Adımı
+
+1. [**2**,3,5,8,7,9,4,15,6] (En küçük sayı 2 bulunur ve başa getirilir)
+2. [2,**3**,5,8,7,9,4,15,6] (İkinci en küçük sayı 3 zaten yerinde)
+3. [2,3,**4**,8,7,9,5,15,6] (Üçüncü en küçük sayı 4 bulunur ve üçüncü sıraya getirilir)
+4. [2,3,4,**5**,7,9,8,15,6] (Dördüncü en küçük sayı 5 bulunur ve dördüncü sıraya getirilir)
+
+### Açıklamalar:
+- Insertion Sort'ta her eleman sırayla alınır ve kendinden önceki elemanlarla karşılaştırılarak doğru konuma yerleştirilir.
+- Selection Sort'ta ise her adımda dizinin sıralanmamış kısmındaki en küçük eleman bulunur ve dizinin başındaki sıralanmış kısmın sonuna eklenir.
+- Her iki algoritmanın da time complexity'si O(n²)'dir.
